@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">parcial_tp3</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="burguermenu">burguerMenu</string>
+    <string name="imagebrand">imageBrand</string>
+    <string name="imageavatar">imageAvatar</string>
+    <string name="perfil">Perfil</string>
+    <string name="configuraci_n">Configuración</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="hola">Hola</string>
+    <string name="mart_n">Martín</string>
 </resources>
