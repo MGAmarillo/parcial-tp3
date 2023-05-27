@@ -5,4 +5,9 @@
     android:layout_height="match_parent"
     android:background="@drawable/rounded_shape"
     tools:context=".HomeFragment">
+
+    <TextView
+        android:id="@+id/jsonResponseFromService"
+        android:layout_width="411dp"
+        android:layout_height="571dp" />
 </FrameLayout>
