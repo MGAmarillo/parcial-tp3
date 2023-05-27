@@ -10,4 +10,7 @@
     <string name="favoritos">Favoritos</string>
     <string name="hola">Hola</string>
     <string name="mart_n">Martín</string>
+    <string name="buscador_de_veh_culos">Buscador de vehículos</string>
+    <string name="marcas">Marcas</string>
+    <string name="ford">Ford</string>
 </resources>
