@@ -10,6 +10,10 @@ import android.widget.ImageView
 import androidx.appcompat.view.menu.MenuView
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import com.example.parcial_tp3.model.Car
+import com.example.parcial_tp3.service.CarService
+import com.example.parcial_tp3.service.CarServiceApiBuilder
+import com.google.android.material.navigation.NavigationView
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
@@ -21,9 +25,13 @@ import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
+    
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
+
 
         val drawerLayout = findViewById<DrawerLayout>(R.id.drawerLayout)
 
@@ -118,4 +126,3 @@ class MainActivity : AppCompatActivity() {
 
 
     }
-}
