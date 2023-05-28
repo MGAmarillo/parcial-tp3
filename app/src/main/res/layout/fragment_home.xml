@@ -14,7 +14,7 @@
         <androidx.appcompat.widget.SearchView
             android:id="@+id/searchView"
             android:layout_width="match_parent"
-            android:layout_height="65dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="15dp"
@@ -31,7 +31,7 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="140dp"
+            android:layout_height="120dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="15dp"
@@ -43,7 +43,7 @@
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
-            android:layout_height="140dp"
+            android:layout_height="120dp"
             android:layout_marginStart="15dp"
             android:layout_marginEnd="15dp"
             android:src="@drawable/suvs_cars"
@@ -54,7 +54,7 @@
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="match_parent"
-            android:layout_height="140dp"
+            android:layout_height="120dp"
             android:layout_marginStart="15dp"
             android:layout_marginEnd="15dp"
             android:src="@drawable/electric_cars"
@@ -78,10 +78,9 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_brands"
             android:layout_width="match_parent"
-            android:layout_height="165dp"
+            android:layout_height="170dp"
             android:layout_marginStart="15dp"
             android:layout_marginEnd="15dp"
-            android:scrollbars="horizontal"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

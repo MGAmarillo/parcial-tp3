@@ -6,4 +6,5 @@
     <color name="grey">#7E8B97</color>
     <color name="greyRoundedShape">#F5F5F5</color>
     <color name="blueLight">#007BFF</color>
+    <color name="greyConfiguration">#FCFCFF</color>
 </resources>
