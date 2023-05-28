@@ -1,59 +1,41 @@
 package com.example.parcial_tp3
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [HomeFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class HomeFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        val homeFragmentView = inflater.inflate(R.layout.fragment_home, container, false)
+
+        val recycler = homeFragmentView.findViewById<RecyclerView>(R.id.recycler_brands)
+
+        recycler.adapter = BrandsAdapter(listOf(
+            Brand("https://logodownload.org/wp-content/uploads/2014/02/ford-logo-1-1.png","Ford","+50"),
+            Brand("https://www.pnguniverse.com/wp-content/uploads/2020/10/Toyota.png","Toyota","+50"),
+            Brand("https://logodownload.org/wp-content/uploads/2014/05/fiat-logo-21.png","Fiat","+50"),
+            Brand("https://i0.wp.com/www.vectorizando.com/wp-content/uploads/2021/05/volkswagen-logo-f508905d.png?fit=500%2C500&ssl=1","Volkswagen","+50"),
+            Brand("https://logodownload.org/wp-content/uploads/2014/09/renault-logo-2-1.png","Renault","+50"),
+            Brand("https://es.logodownload.org/wp-content/uploads/2019/06/Chevrolet-logo-41.png","Chevrolet","+50"),
+            Brand("https://logodownload.org/wp-content/uploads/2014/09/citroen-logo-1-1.png","Citroën","+50"),
+            Brand("https://logodownload.org/wp-content/uploads/2014/09/nissan-logo-1-1.png","Nissan","+50"),
+            Brand("https://segurovehicular.net/wp-content/uploads/2021/05/jeep-logo.png","Jeep","+50"),
+        ))
+
+        val linearLayoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+        
+        recycler.setLayoutManager(linearLayoutManager)
+        
+
+        return homeFragmentView
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment HomeFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            HomeFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
-    }
 }
