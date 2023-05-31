@@ -1,18 +1,10 @@
 package com.example.parcial_tp3.model
-
-import com.google.gson.annotations.SerializedName
-
-data class Car(
-    @SerializedName(value = "city_mpg") val cityMpg: Int?,
-    @SerializedName(value = "class") val type: String?,
-    @SerializedName(value = "combination_mpg") val combinationMpg: Int?,
-    val cylinders: Int?,
-    val displacement: Double?,
-    val drive: String?,
-    @SerializedName(value = "fuel_type") val fuelType: String?,
-    @SerializedName(value = "highway_mpg") val highwayMpg: Int?,
-    val make: String?,
-    val model: String?,
-    val transmission: String?,
-    val year: Int?,
-)
+class Car(model: String, make: String, photo: String, transmission: String, fuel_type: String, year: Int, `class`: String){
+        var model = model
+        var make = make
+        var photo = photo
+        var transmission = transmission
+        var fuel_type = fuel_type
+        var year = year
+        var `class` = `class`
+    }

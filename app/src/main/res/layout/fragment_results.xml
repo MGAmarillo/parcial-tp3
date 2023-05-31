@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/rounded_shape"
-    tools:context=".resultsFragment">
+    tools:context=".ResultsFragment">
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/searchView"
@@ -23,6 +23,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:queryBackground="@color/white"
         app:searchHintIcon="@drawable/search_icon" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_results"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:listitem="@layout/item_results" />
 
 
 

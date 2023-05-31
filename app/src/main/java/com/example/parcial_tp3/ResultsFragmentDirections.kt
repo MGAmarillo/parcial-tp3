@@ -10,5 +10,8 @@ class ResultsFragmentDirections private constructor() {
 
             public fun actionResultsFragmentToProfileFragment(): NavDirections =
                 ActionOnlyNavDirections(R.id.action_resultsFragment_to_profileFragment)
+
+            public fun actionResultsFragmentToConfigurationsFragment(): NavDirections =
+                ActionOnlyNavDirections(R.id.action_resultsFragment_to_configurationFragment)
         }
     }

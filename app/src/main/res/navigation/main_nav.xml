@@ -20,6 +20,9 @@
             app:destination="@id/resultsFragment"
             app:popUpTo="@id/main_nav"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homeFragment_to_configurationFragment"
+            app:destination="@id/configurationFragment" />
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
@@ -36,10 +39,13 @@
             app:destination="@id/resultsFragment"
             app:popUpTo="@id/main_nav"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_profileFragment_to_configurationFragment"
+            app:destination="@id/configurationFragment" />
     </fragment>
     <fragment
         android:id="@+id/resultsFragment"
-        android:name="com.example.parcial_tp3.resultsFragment"
+        android:name="com.example.parcial_tp3.ResultsFragment"
         android:label="fragment_results"
         tools:layout="@layout/fragment_results" >
         <action
@@ -50,6 +56,35 @@
         <action
             android:id="@+id/action_resultsFragment_to_profileFragment"
             app:destination="@id/profileFragment"
+            app:popUpTo="@id/main_nav"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_resultsFragment_to_configurationFragment"
+            app:destination="@id/configurationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/configurationFragment"
+        android:name="com.example.parcial_tp3.ConfigurationFragment"
+        android:label="fragment_configuration"
+        tools:layout="@layout/fragment_configuration" >
+        <action
+            android:id="@+id/action_configurationFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/main_nav"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_configurationFragment_to_homeFragment2"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/main_nav"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_configurationFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:popUpTo="@id/main_nav"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_configurationFragment_to_resultsFragment"
+            app:destination="@id/resultsFragment"
             app:popUpTo="@id/main_nav"
             app:popUpToInclusive="true" />
     </fragment>

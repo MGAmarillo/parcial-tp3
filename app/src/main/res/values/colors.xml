@@ -7,4 +7,5 @@
     <color name="greyRoundedShape">#F5F5F5</color>
     <color name="blueLight">#007BFF</color>
     <color name="greyConfiguration">#FCFCFF</color>
+    <color name="blueTitle">#001D42</color>
 </resources>

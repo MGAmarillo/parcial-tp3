@@ -14,7 +14,7 @@ class SplashActivity : AppCompatActivity() {
     override fun onStart(){
         super.onStart()
         Handler().postDelayed({
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()
         },3000)
